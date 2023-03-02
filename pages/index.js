@@ -7,9 +7,9 @@ export default function Home(){
 
     return (
         <div>
-            <Navbar/>
             <h1>up {num}</h1>
             <button onClick={()=>setNum(num+1)}>+</button>
         </div>
+        
     );
 }
