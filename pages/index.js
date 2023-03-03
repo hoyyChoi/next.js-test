@@ -18,15 +18,7 @@ export default function Home({results}){
     
     const router = useRouter()
     const onClick = (id,title)=>{
-        router.push(
-            {
-                pathname:`/movies/${id}`,
-                query:{
-                    title
-                }
-            }
-            // , `/movies/${id}`
-        )
+        router.push(`/movies/${title}/${id}`)
     }
     
     useEffect(()=>{
@@ -42,12 +34,7 @@ export default function Home({results}){
                    return ( 
                     <div className="movie" key={movie.id}>
                         <img onClick={()=>onClick(movie.id,movie.original_title)} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
-                        <Link style={{textDecoration:'none'}} key={movie.id} href={{
-                            pathname:`/movies/${movie.id}}`,
-                            query:{
-                                title:movie.original_title
-                            }
-                        }} as={ `/movies/${movie.id}`}>
+                        <Link style={{textDecoration:'none'}} key={movie.id} href={`/movies/${movie.id}`}>
                             <h4>{movie.original_title}</h4>
                         </Link>
                     </div>       
