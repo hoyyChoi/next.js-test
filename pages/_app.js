@@ -1,21 +1,12 @@
-import Navbar from "@/components/Navbar";
-import '../styles/globals.css'
+import Layout from "@/components/Layout";
+
 
 export default function App({Component, pageProps}){
     return (
     <div>
-        <Navbar/>
-        <Component {...pageProps}/>
-        <h2>hello</h2>
-        <style jsx global>{
-                `
-                div{
-                    color:blue;
-                }
-                `
-            }
-
-            </style>
+        <Layout>
+            <Component {...pageProps}/>  {/* Layout 태그 안에 감싼 것이 Layout 태그의 props = children이 되서 들어가진다. */}
+        </Layout>
     </div>
     )
 }
