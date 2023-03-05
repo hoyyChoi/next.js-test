@@ -50,7 +50,7 @@
 - 
 
 - nextJS에 css 적용법 (3가지)
-    - 태그 자체에 style 적용시키는 방법.! (ex. <div style={{backgroundColor:’red’}}> 하이 </div>
+    - 태그 자체에 style 적용시키는 방법.! (ex. ```<div style={{backgroundColor:’red’}}> 하이 </div>```)
     - Module.css
         - next.js 에서 제공하는 css 모듈 이다. 이것으로 우리는 평범한 css를 사용할 수 있다. 클래스 이름으로 텍스트로서 적지 않는다. 자바스크립트 오브젝트에서의 프로퍼티 형식으로 적는다. (Ex. styles.nav)
         - 이러한 접근방식을 이용한다면, 렌더 될때, 클래스 이름이 무작위 텍스트로 지정된다. (어떤 충돌도 이르키지 않는다.) 어떤 컴포넌트에서도 재사용이 가능하다.~
