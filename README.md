@@ -1,3 +1,9 @@
+
+<div align=center><h1>zzzzzzzzzz</h1></div>
+
+<br>
+
+
 # nextJS
 ## nextjs는 React로 만드는 서버사이드 렌더링 프레임워크. 
 - 서버사이드 렌더링을 함으로 얻는 장점
